@@ -2,526 +2,381 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marisha Sahay — Senior Software Engineer & Fintech Builder</title>
-    <meta name="description"
-        content="Marisha Sahay is a full-stack senior software engineer with 10+ years of experience at PayPal and Xoom, building customer-facing fintech products and AI-powered tools. Based in Austin, TX." />
-    <meta property="og:title" content="Marisha Sahay — Senior Software Engineer & Fintech Builder" />
-    <meta property="og:description"
-        content="Full-stack senior software engineer, fintech product builder, and open-source contributor. Based in Austin, TX." />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marisha Sahay · Senior Software Engineer, Backend</title>
+  <meta name="description"
+    content="Marisha Sahay is a senior backend engineer at PayPal who builds payment systems in Java and Spring Boot: ledgers, FX pricing, partner reporting and chargebacks. Based in Austin, TX." />
+  <meta property="og:title" content="Marisha Sahay · Senior Software Engineer, Backend" />
+  <meta property="og:description"
+    content="Backend engineer building payment systems in Java and Spring Boot at PayPal. 15+ years in software." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marisha-sahay.github.io/" />
+  <link rel="canonical" href="https://marisha-sahay.github.io/" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b1c1e'/%3E%3Ctext x='16' y='21.5' font-family='ui-monospace,Menlo,monospace' font-size='14' font-weight='600' fill='%23fff' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a href="#hero" class="nav-logo" id="nav-logo">MS</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about" id="nav-about">About</a></li>
-                <li><a href="#experience" id="nav-experience">Experience</a></li>
-                <li><a href="#projects" id="nav-projects">Projects</a></li>
-                <li><a href="#skills" id="nav-skills">Skills</a></li>
-                <li><a href="#education" id="nav-education">Education</a></li>
-                <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+  <nav class="nav container" aria-label="Main">
+    <a href="#top" class="nav-name">marisha sahay</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Open source</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero -->
-    <section id="hero" class="hero" aria-label="Hero section">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-            <div class="hero-badge" id="hero-badge">
-                <span class="pulse-dot" aria-hidden="true"></span>
-                Open to new opportunities
-            </div>
-            <h1 class="hero-name" id="hero-name">Marisha Sahay</h1>
-            <p class="hero-title" id="hero-title">
-                <span class="typed-text" id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
-            </p>
-            <p class="hero-sub" id="hero-sub">
-                Senior ackend engineer with 10+ years building customer-facing fintech products.<br />
-                Currently at <strong>Xoom, A PayPal Service</strong> · Austin, TX
-            </p>
-            <div class="hero-actions" id="hero-actions">
-                <a href="#projects" class="btn btn-primary" id="btn-view-work">View My Work</a>
-                <a href="https://linkedin.com/in/marisha-sahay" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-ghost" id="btn-linkedin">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/Marisha-Sahay" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-ghost" id="btn-github">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator" aria-hidden="true">
-            <div class="scroll-line"></div>
-        </div>
+  <main id="main">
+
+    <!-- Intro -->
+    <header id="top" class="intro container">
+      <h1>Marisha Sahay</h1>
+      <p class="headline">Senior Software Engineer · Backend, Java &amp; Spring Boot</p>
+      <p class="lede">
+        I build backend systems for cross-border payments at PayPal: ledgers, FX pricing, partner reporting
+        and chargebacks. 15+ years in software, nine of them at PayPal, mostly in Java and Spring Boot.
+      </p>
+      <ul class="intro-links">
+        <li>Austin, TX</li>
+        <li><a href="mailto:sahaymarisha@gmail.com">sahaymarisha@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/marisha-sahay" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/Marisha-Sahay" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to new opportunities</p>
+    </header>
+
+    <!-- Impact -->
+    <section class="section container" aria-labelledby="impact-label">
+      <h2 id="impact-label" class="section-label">Impact</h2>
+      <div class="section-body">
+        <dl class="impact">
+          <div>
+            <dt>$35M+</dt>
+            <dd>daily payment volume reported to 40+ banking partners by an engine I led</dd>
+          </div>
+          <div>
+            <dt>99.999%</dt>
+            <dd>ledger consistency on 80K+ daily transactions in an event-driven subledger</dd>
+          </div>
+          <div>
+            <dt>$1.5M</dt>
+            <dd>saved each year by a real-time chargeback management system</dd>
+          </div>
+          <div>
+            <dt>140+</dt>
+            <dd>countries priced by FX tiering APIs with automated overlap checks</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section" aria-labelledby="about-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">01 / About</span>
-                <h2 id="about-heading">Who I Am</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="lead">
-                        A customer-obsessed web developer &amp; QA engineer with a methodical approach to quality and a
-                        passion for building products that matter.
-                    </p>
-                    <p>
-                        With over 10 years of experience in frontend and full-stack software engineering, my work has
-                        focused on customer-facing product development at the intersection of fintech, payments, and AI.
-                        I've built and shipped products used by millions at PayPal and Xoom, working closely across
-                        engineering, product, and design.
-                    </p>
-                    <p>
-                        I deeply resonate with principles of <strong>Customer Obsession</strong>, <strong>Working
-                            Customer Back</strong>, and <strong>Winning Together</strong>—values that continue to guide
-                        how I build.
-                    </p>
-                    <p>
-                        Outside of my day job, I build open-source tools—from AI-powered job search agents to FX
-                        comparison engines—because I believe great software should be transparent, accessible, and
-                        useful.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item" id="highlight-years">
-                            <span class="highlight-num">10+</span>
-                            <span class="highlight-label">Years Experience</span>
-                        </div>
-                        <div class="highlight-item" id="highlight-companies">
-                            <span class="highlight-num">2</span>
-                            <span class="highlight-label">Major Fintechs</span>
-                        </div>
-                        <div class="highlight-item" id="highlight-location">
-                            <span class="highlight-num">Austin</span>
-                            <span class="highlight-label">Texas, USA</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-card" id="about-card">
-                    <div class="about-card-inner">
-                        <div class="about-avatar" aria-hidden="true">
-                            <span class="avatar-initials">MS</span>
-                            <div class="avatar-ring"></div>
-                        </div>
-                        <ul class="about-facts" aria-label="Quick facts">
-                            <li>
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                                Austin, TX
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" />
-                                    <path d="M8 21h8M12 17v4" />
-                                </svg>
-                                Full-Stack &amp; Frontend
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                </svg>
-                                Fintech &amp; Payments
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 8v4l3 3" />
-                                </svg>
-                                500+ LinkedIn Connections
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                                </svg>
-                                Open Source Builder
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Strengths -->
+    <section class="section container" aria-labelledby="strengths-label">
+      <h2 id="strengths-label" class="section-label">Strengths</h2>
+      <div class="section-body">
+        <ul class="strengths">
+          <li>
+            <h3>Systems that move money</h3>
+            <p>Subledgers, FX pricing, remittance, crypto off-ramps, chargebacks and partner reporting. I design for
+              audit trails and consistency first, because every gap is a reconciliation problem later.</p>
+          </li>
+          <li>
+            <h3>Reliability under load</h3>
+            <p>Moved batch reporting onto read replicas (+35% throughput, 99.99% availability) and replaced memory-bound
+              exports with streaming I/O that ended JVM out-of-memory errors.</p>
+          </li>
+          <li>
+            <h3>Technical leadership</h3>
+            <p>Took the Partner Reporting engine from architecture to production with a team of two engineers, and set
+              the review standards the team builds against.</p>
+          </li>
+          <li>
+            <h3>AI-assisted engineering</h3>
+            <p>Built Claude Code review skills that made code reviews 60% faster, shipped a regulatory intelligence
+              agent, and contribute to LangChain4j&rsquo;s Spring Boot integration.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="section section-dark" aria-labelledby="experience-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">02 / Experience</span>
-                <h2 id="experience-heading">Where I've Worked</h2>
+    <section id="experience" class="section container" aria-labelledby="experience-label">
+      <h2 id="experience-label" class="section-label">Experience</h2>
+      <div class="section-body">
+
+        <article class="company">
+          <header class="company-head">
+            <h3>PayPal</h3>
+            <span class="dates">Oct 2017 – Present</span>
+          </header>
+
+          <div class="role">
+            <div class="role-head">
+              <h4>Senior Software Engineer, Remittance</h4>
+              <span class="dates">Apr 2022 – Present</span>
             </div>
-            <div class="timeline" id="timeline">
+            <p class="role-meta">Austin, TX</p>
+            <ul class="points">
+              <li>Led a team of two engineers to design and build a centralized <strong>Partner Reporting
+                  engine</strong> that automates financial reporting for <strong>80K+ daily transactions ($35M+
+                  volume)</strong> across <strong>40+ global banking partners</strong>.</li>
+              <li>Built a real-time <strong>Chargeback Management System</strong> with secure REST webhooks for
+                payment-processor dispute events, closing blind spots across the dispute lifecycle and saving
+                <strong>$1.5M a year</strong> in chargebacks and fraudulent charges.</li>
+              <li>Raised GCP Cloud SQL throughput by <strong>35%</strong> and removed contention on the primary by routing
+                heavy batch reporting to PostgreSQL/MySQL read replicas, sustaining <strong>99.99%</strong>
+                payment-system availability.</li>
+              <li>Replaced legacy Jenkins report jobs with a streaming export pipeline (buffered CSV, JavaMailSender):
+                report delivery <strong>30% faster</strong> and <strong>no more JVM out-of-memory errors</strong>.</li>
+              <li>Turned unmonitored write-offs into real-time tracking for Risk and Accounting, cutting fraud losses
+                and recovering <strong>$500K</strong> in revenue.</li>
+              <li>Built high-concurrency coupon validation APIs for Xoom, driving an <strong>18% lift in checkout
+                  conversion</strong> and more repeat transactions.</li>
+              <li>Wrote Claude Code skills that check Java best practices and team coding standards during review,
+                making code reviews <strong>60% faster</strong>.</li>
+              <li>Designed and shipped a <strong>Regulatory Intelligence agent</strong> on OpenAI GPT APIs, served through
+                PayPal&rsquo;s internal LLM gateway, so product teams can query regulatory PDFs for cross-border launch
+                requirements and legal constraints.</li>
+            </ul>
+            <p class="stack">Java 21 · Spring Boot · PostgreSQL · MySQL · GCP Cloud SQL · Claude Code</p>
+          </div>
 
-                <div class="timeline-item" id="exp-xoom">
-                    <div class="timeline-dot" aria-hidden="true"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="job-title">Software Engineer</h3>
-                                <p class="company-name">
-                                    <a href="https://www.xoom.com" target="_blank" rel="noopener noreferrer">Xoom, A
-                                        PayPal Service</a>
-                                </p>
-                            </div>
-                            <span class="job-date">Current</span>
-                        </div>
-                        <p class="job-desc">
-                            Building customer-facing money transfer products for Xoom's global remittance platform, part
-                            of the PayPal family. Working on full-stack features across engineering, product, and design
-                            teams.
-                        </p>
-                        <div class="job-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Fintech</span>
-                            <span class="tag">Payments</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" id="exp-paypal">
-                    <div class="timeline-dot" aria-hidden="true"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="job-title">Software Engineer</h3>
-                                <p class="company-name">
-                                    <a href="https://www.paypal.com" target="_blank"
-                                        rel="noopener noreferrer">PayPal</a>
-                                </p>
-                            </div>
-                            <span class="job-date">~10 years</span>
-                        </div>
-                        <p class="job-desc">
-                            Worked extensively across frontend and full-stack engineering in customer-facing product
-                            development. Shipped features across crypto, payments, and consumer products used by
-                            millions of users globally. Collaborated closely with engineering, product, and design.
-                        </p>
-                        <div class="job-tags">
-                            <span class="tag">Full-Stack</span>
-                            <span class="tag">Frontend</span>
-                            <span class="tag">Crypto</span>
-                            <span class="tag">Consumer Products</span>
-                            <span class="tag">QA Engineering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" id="exp-hp">
-                    <div class="timeline-dot" aria-hidden="true"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="job-title">QA Engineer</h3>
-                                <p class="company-name">HP</p>
-                            </div>
-                            <span class="job-date">Earlier career</span>
-                        </div>
-                        <p class="job-desc">
-                            Worked as a QA Engineer at HP, developing a strong foundation in quality assurance, test
-                            automation, and methodical software engineering practices.
-                        </p>
-                        <div class="job-tags">
-                            <span class="tag">QA</span>
-                            <span class="tag">Test Automation</span>
-                            <span class="tag">HP QTP</span>
-                            <span class="tag">Selenium</span>
-                        </div>
-                    </div>
-                </div>
-
+          <div class="role">
+            <div class="role-head">
+              <h4>Senior Software Engineer, Cryptocurrency</h4>
+              <span class="dates">Mar 2021 – Mar 2022</span>
             </div>
-        </div>
+            <p class="role-meta">San Francisco, CA</p>
+            <ul class="points">
+              <li>Built low-latency off-ramp REST APIs that calculate real-time crypto-to-fiat quotes, processing
+                <strong>$3M+ a day</strong> in PayPal and Xoom crypto liquidations over instant payout rails.</li>
+              <li>Developed high-availability remittance APIs for cross-border transfers of the PayPal USD (PYUSD)
+                stablecoin, extending payment coverage to non-US jurisdictions under strict regulatory validation.
+              </li>
+            </ul>
+            <p class="stack">Java 17 · Spring Boot · SQL</p>
+          </div>
+
+          <div class="role">
+            <div class="role-head">
+              <h4>Senior Software Engineer, Remittance</h4>
+              <span class="dates">Oct 2018 – Feb 2021</span>
+            </div>
+            <p class="role-meta">San Francisco, CA</p>
+            <ul class="points">
+              <li>Built an event-driven <strong>subledger</strong> that follows each transaction through Created,
+                Accepted, Funded and Disbursed, processing <strong>80K+ daily transactions</strong> with
+                <strong>99.999% ledger consistency</strong>.</li>
+              <li>Persisted every state change to Cloud SQL on ingestion, giving accounting an immutable, audit-ready
+                event trail for <strong>100K+ daily transactions</strong>.</li>
+              <li>Designed FX tiering APIs with automated range validation that blocks overlapping exchange-rate tiers,
+                closing currency pricing gaps across <strong>140+ countries</strong>.</li>
+            </ul>
+            <p class="stack">Java 11 · Spring Boot · RabbitMQ · GCP Cloud SQL</p>
+          </div>
+
+          <div class="role">
+            <div class="role-head">
+              <h4>Senior Software Engineer, Credit</h4>
+              <span class="dates">Oct 2017 – Sep 2018</span>
+            </div>
+            <p class="role-meta">San Francisco, CA</p>
+            <ul class="points">
+              <li>Built a full-stack Buy Now, Pay Later checkout tile offering 0% APR, six-month promotional financing
+                with dynamic monthly allocation.</li>
+              <li>Decoupled merchant settlement from consumer installment schedules so merchants were paid sooner, with
+                real-time credit calculations at checkout that generated <strong>$15M+ in new revenue</strong>.</li>
+            </ul>
+            <p class="stack">Java · Node.js · React</p>
+          </div>
+        </article>
+
+        <article class="company">
+          <header class="company-head">
+            <h3>BitCaffe</h3>
+            <span class="dates">Aug 2015 – Oct 2017</span>
+          </header>
+          <div class="role">
+            <div class="role-head">
+              <h4>Software Engineer</h4>
+            </div>
+            <p class="role-meta">San Francisco, CA</p>
+            <ul class="points">
+              <li>Built a real-time aggregation pipeline for market data and news (CoinDesk, Twitter/X APIs) covering
+                the top 50 crypto assets.</li>
+              <li>Added batch schedulers and index tuning that brought news-feed queries under a second and cut initial
+                page render time by 30%+.</li>
+            </ul>
+            <p class="stack">Ruby on Rails · PostgreSQL</p>
+          </div>
+        </article>
+
+        <article class="company">
+          <header class="company-head">
+            <h3>Care.com</h3>
+            <span class="dates">Sep 2010 – Dec 2013</span>
+          </header>
+          <div class="role">
+            <div class="role-head">
+              <h4>Lead QA Engineer</h4>
+            </div>
+            <p class="role-meta">Remote</p>
+            <ul class="points">
+              <li>Led a two-person automation team building Java and Selenium suites, saving <strong>120+ hours</strong> of
+                manual regression testing per sprint and speeding up releases.</li>
+              <li>Automated UI coverage for account creation, search and booking, cutting post-release regressions by
+                <strong>35%</strong>.</li>
+            </ul>
+            <p class="stack">Java · Selenium</p>
+          </div>
+        </article>
+
+        <article class="company">
+          <header class="company-head">
+            <h3>Hewlett-Packard</h3>
+            <span class="dates">Oct 2008 – Mar 2010</span>
+          </header>
+          <div class="role">
+            <div class="role-head">
+              <h4>Software Engineer</h4>
+            </div>
+            <p class="role-meta">Remote</p>
+            <ul class="points">
+              <li>Led the migration of Aetna&rsquo;s healthcare web platform from classic ASP to ASP.NET, improving page
+                response times by <strong>35%</strong>.</li>
+              <li>Built C# data-access components and refactored business logic for portals serving millions of page
+                views a month.</li>
+            </ul>
+            <p class="stack">C# · ASP.NET</p>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section" aria-labelledby="projects-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">03 / Projects</span>
-                <h2 id="projects-heading">What I've Built</h2>
+    <!-- Open source & writing -->
+    <section id="work" class="section container" aria-labelledby="work-label">
+      <h2 id="work-label" class="section-label">Open source &amp; writing</h2>
+      <div class="section-body">
+        <ul class="work">
+          <li>
+            <div class="work-head">
+              <a href="https://github.com/langchain4j/langchain4j-spring" rel="noopener noreferrer">LangChain4j
+                Spring</a>
+              <span class="kind">Contributor</span>
             </div>
-            <div class="projects-grid" id="projects-grid">
-
-                <article class="project-card featured" id="project-multirail">
-                    <div class="project-card-inner">
-                        <div class="project-icon" aria-hidden="true">💱</div>
-                        <div class="project-meta">
-                            <span class="project-badge">Open Source</span>
-                            <span class="project-badge project-badge-new">Latest</span>
-                        </div>
-                        <h3 class="project-title">Multirail FX</h3>
-                        <p class="project-desc">
-                            An open-source FX comparison tool that shows the optimal payment rail in seconds. Enter an
-                            amount, pick a currency pair, and compare SWIFT vs Visa Direct vs Wise vs Xoom with real
-                            mid-market rates and transparent fee breakdowns. A free, independent alternative to
-                            CompareRemit and FXcompared—rankings are pure math, open source code.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Fintech</span>
-                            <span class="tag">FX</span>
-                            <span class="tag">Open Source</span>
-                            <span class="tag">Payments</span>
-                        </div>
-                        <a href="https://lnkd.in/gZRgU8i9" target="_blank" rel="noopener noreferrer"
-                            class="project-link" id="project-multirail-link">
-                            View Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                <polyline points="15 3 21 3 21 9" />
-                                <line x1="10" y1="14" x2="21" y2="3" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card" id="project-jobsearch">
-                    <div class="project-card-inner">
-                        <div class="project-icon" aria-hidden="true">🤖</div>
-                        <div class="project-meta">
-                            <span class="project-badge">Open Source</span>
-                            <span class="project-badge project-badge-ai">AI Agent</span>
-                        </div>
-                        <h3 class="project-title">Job Search Agent</h3>
-                        <p class="project-desc">
-                            An AI-powered job search tool that pulls open roles from target companies twice a day, built
-                            to help people navigate job hunting. Clone the repo, swap in your target companies,
-                            location, and keywords, and you're set.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AI Agent</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Open Source</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <a href="https://lnkd.in/gjNWgunM" target="_blank" rel="noopener noreferrer"
-                            class="project-link" id="project-jobsearch-link">
-                            View Project
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                <polyline points="15 3 21 3 21 9" />
-                                <line x1="10" y1="14" x2="21" y2="3" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
+            <p>Two merged PRs to the Spring Boot starters for LangChain4j: <a
+                href="https://github.com/langchain4j/langchain4j-spring/pull/215" rel="noopener noreferrer">property
+                placeholder resolution</a> in <code>@AiService</code> bean attributes, and <a
+                href="https://github.com/langchain4j/langchain4j-spring/pull/225" rel="noopener noreferrer">logging of
+                configured bean references</a> at registration.</p>
+          </li>
+          <li>
+            <div class="work-head">
+              <a href="https://github.com/bitcoin/bitcoin" rel="noopener noreferrer">Bitcoin Core</a>
+              <span class="kind">Reviewer</span>
             </div>
-        </div>
+            <p>Review, testing and pull request evaluation on the C++ codebase, checking protocol consistency,
+              peer-to-peer networking behavior and consensus safety.</p>
+          </li>
+          <li>
+            <div class="work-head">
+              <a href="https://github.com/Marisha-Sahay/fintech-stack-report" rel="noopener noreferrer">Designing Systems
+                That Move Money</a>
+              <span class="kind">Draft</span>
+            </div>
+            <p>A source-graded review of design trade-offs at 24 fintechs, banks and platforms: how money is recorded,
+              where atomicity lives, partitioning, and service and event boundaries.</p>
+          </li>
+          <li>
+            <div class="work-head">
+              <a href="https://github.com/Marisha-Sahay/awesome-java-agent-skills" rel="noopener noreferrer">Java Agent
+                Skills</a>
+              <span class="kind">Author</span>
+            </div>
+            <p>Agent skills, Checkstyle rules and Maven quality gates that hold AI coding assistants to Java 21 and
+              Effective Java standards. Companion repo: <a
+                href="https://github.com/Marisha-Sahay/java-clean-code-agent-skills" rel="noopener noreferrer">java-clean-code-agent-skills</a>.
+            </p>
+          </li>
+          <li>
+            <div class="work-head">
+              <a href="https://github.com/Marisha-Sahay/multirail-fx-agent" rel="noopener noreferrer">Multirail FX</a>
+              <span class="kind">Author</span>
+            </div>
+            <p>A payment router that compares SWIFT, Visa Direct and Wise on cost and speed using live mid-market rates
+              and recommends a payout rail.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section section-dark" aria-labelledby="skills-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">04 / Skills</span>
-                <h2 id="skills-heading">What I Know</h2>
-            </div>
-            <div class="skills-wrapper" id="skills-wrapper">
-
-                <div class="skill-group" id="skillgroup-backend">
-                    <h3 class="skill-group-title">Backend &amp; Full-Stack</h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Java</span>
-                        <span class="skill-chip">Spring Boot</span>
-                        <span class="skill-chip">Spring</span>
-                        <span class="skill-chip">REST APIs</span>
-                    </div>
-                </div>
-
-                <div class="skill-group" id="skillgroup-frontend">
-                    <h3 class="skill-group-title">Frontend</h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip">JavaScript</span>
-                        <span class="skill-chip">React</span>
-                        <span class="skill-chip">AngularJS</span>
-                        <span class="skill-chip">HTML5</span>
-                        <span class="skill-chip">CSS3</span>
-                        <span class="skill-chip">TypeScript</span>
-                    </div>
-                </div>
-
-                <div class="skill-group" id="skillgroup-qa">
-                    <h3 class="skill-group-title">QA &amp; Testing</h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Selenium WebDriver</span>
-                        <span class="skill-chip">Test Automation</span>
-                        <span class="skill-chip">QA Engineering Lead</span>
-                    </div>
-                </div>
-
-                <div class="skill-group" id="skillgroup-domain">
-                    <h3 class="skill-group-title">Domain &amp; Fintech</h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Payments / Finance</span>
-                        <span class="skill-chip">FX / Remittances</span>
-                        <span class="skill-chip">Crypto</span>
-                        <span class="skill-chip">Consumer Products</span>
-                        <span class="skill-chip">AI Agents</span>
-                    </div>
-                </div>
-
-                <div class="skill-group" id="skillgroup-tools">
-                    <h3 class="skill-group-title">Tools &amp; Platforms</h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Git / GitHub</span>
-                        <span class="skill-chip">Harness</span>
-                        <span class="skill-chip">Jira</span>
-                        <span class="skill-chip">Confluence</span>
-                        <span class="skill-chip">Hugging Face</span>
-                        <span class="skill-chip">Postman</span>
-                        <span class="skill-chip">Agile / Scrum</span>
-                        <span class="skill-chip">CI/CD</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <section class="section container" aria-labelledby="skills-label">
+      <h2 id="skills-label" class="section-label">Skills</h2>
+      <div class="section-body">
+        <dl class="skills">
+          <div>
+            <dt>Core</dt>
+            <dd>Java (6–21), Spring Boot, Spring, REST APIs, SQL (PostgreSQL, MySQL, GCP Cloud SQL), RabbitMQ, Redis,
+              ZooKeeper, Jenkins, Postman, Claude Code</dd>
+          </div>
+          <div>
+            <dt>Also used</dt>
+            <dd>Docker, Harness, JavaScript, Node.js, React, Angular, Ruby on Rails, .NET, D3.js, Selenium</dd>
+          </div>
+          <div>
+            <dt>Domains</dt>
+            <dd>Payments, remittance, FX, ledgers, chargebacks, crypto, consumer credit</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <!-- Education & Certifications -->
-    <section id="education" class="section" aria-labelledby="education-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">05 / Education</span>
-                <h2 id="education-heading">Education &amp; Certifications</h2>
-            </div>
-            <div class="edu-grid" id="edu-grid">
-
-                <div class="edu-card degree" id="edu-bit">
-                    <div class="edu-icon" aria-hidden="true">🎓</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">Master of Computer Applications</h3>
-                        <p class="edu-school">Birla Institute of Technology (BIT)</p>
-                        <p class="edu-date">2005 – 2008</p>
-                    </div>
-                </div>
-
-                <div class="edu-card cert" id="cert-aiagents">
-                    <div class="edu-icon" aria-hidden="true">🤖</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">AI Agents Fundamentals</h3>
-                        <p class="edu-school">Hugging Face</p>
-                        <p class="edu-date">Issued Apr 2025 · Expires Jan 2030</p>
-                        <a href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/marishasahay/2025-04-17.png"
-                            target="_blank" rel="noopener noreferrer" class="edu-cred-link" id="cert-aiagents-link">See
-                            credential ↗</a>
-                    </div>
-                </div>
-
-                <div class="edu-card cert" id="cert-actualize">
-                    <div class="edu-icon" aria-hidden="true">💻</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">Full-Stack Coding Bootcamp</h3>
-                        <p class="edu-school">Actualize</p>
-                        <p class="edu-date">Ruby on Rails &amp; AngularJS · Intensive 4-month program</p>
-                    </div>
-                </div>
-
-                <div class="edu-card cert" id="cert-python">
-                    <div class="edu-icon" aria-hidden="true">🐍</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">Python Programming</h3>
-                        <p class="edu-school">Udacity</p>
-                    </div>
-                </div>
-
-                <div class="edu-card cert" id="cert-selenium">
-                    <div class="edu-icon" aria-hidden="true">🧪</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">Selenium WebDriver with Java</h3>
-                        <p class="edu-school">Udemy</p>
-                    </div>
-                </div>
-
-                <div class="edu-card cert" id="cert-hpqtp">
-                    <div class="edu-icon" aria-hidden="true">🔬</div>
-                    <div class="edu-body">
-                        <h3 class="edu-title">HP Quick Test Professional</h3>
-                        <p class="edu-school">Udemy</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <!-- Education -->
+    <section class="section container" aria-labelledby="education-label">
+      <h2 id="education-label" class="section-label">Education</h2>
+      <div class="section-body">
+        <ul class="edu">
+          <li><strong>M.S., Computer Applications</strong><span>BIT Mesra</span></li>
+          <li><strong>B.S., Computer Applications</strong><span>BIT Mesra</span></li>
+          <li><strong>AI Agents Fundamentals</strong><span><a
+                href="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/marishasahay/2025-04-17.png"
+                rel="noopener noreferrer">Hugging Face, 2025</a></span></li>
+        </ul>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
-        <div class="container container-narrow">
-            <div class="section-header centered">
-                <span class="section-tag">06 / Contact</span>
-                <h2 id="contact-heading">Let's Connect</h2>
-                <p class="contact-sub">I'm currently open to new opportunities. Whether you have a role in mind, a
-                    project to collaborate on, or just want to say hi — my inbox is open.</p>
-            </div>
-            <div class="contact-links" id="contact-links">
-                <a href="https://linkedin.com/in/marisha-sahay" target="_blank" rel="noopener noreferrer"
-                    class="contact-link" id="contact-linkedin">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/Marisha-Sahay" target="_blank" rel="noopener noreferrer"
-                    class="contact-link" id="contact-github">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-        </div>
+    <section id="contact" class="section container" aria-labelledby="contact-label">
+      <h2 id="contact-label" class="section-label">Contact</h2>
+      <div class="section-body">
+        <p class="contact-copy">I&rsquo;m open to backend and platform roles in payments and fintech. Email is the
+          fastest way to reach me.</p>
+        <ul class="intro-links">
+          <li><a href="mailto:sahaymarisha@gmail.com">sahaymarisha@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/marisha-sahay" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/Marisha-Sahay" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p class="footer-copy">Designed &amp; built by Marisha Sahay · Austin, TX · <span id="footer-year"></span>
-            </p>
-        </div>
-    </footer>
+  </main>
 
-    <script src="main.js"></script>
+  <footer class="footer container">
+    <p>© 2026 Marisha Sahay · Plain HTML and CSS. No frameworks, no trackers. <a
+        href="https://github.com/Marisha-Sahay/Marisha-Sahay.github.io" rel="noopener noreferrer">Source</a></p>
+  </footer>
 </body>
 
 </html>
